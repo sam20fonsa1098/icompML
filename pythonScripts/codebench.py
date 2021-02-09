@@ -2,6 +2,7 @@
 Imports
 """
 import tarfile
+import requests
 
 from utils import codebench_dataset, codebench_base_zip
 from osFiles import OsFiles

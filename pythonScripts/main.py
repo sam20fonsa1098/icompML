@@ -66,4 +66,4 @@ for file in files:
             tD = TransformData(path, arqs, int(user), int(clas), db)
             tD.generateData()
             tD.generateGrades()
-            tD.generateFinalGrade() 
+            tD.generateFinalGrade()

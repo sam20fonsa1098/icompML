@@ -1,0 +1,10 @@
+mysql-connector
+radon
+scikit-learn
+Keras
+tensorflow
+pandas
+numpy
+setuptools
+shap
+matplotlib
