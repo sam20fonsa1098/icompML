@@ -1,0 +1,80 @@
+const questionColumns = 
+`   
+    amount_of_change,
+    blank_line,
+    comments,
+    lloc,
+    count_if,
+    count_loop,
+    count_var,
+    count_delete as deleted,
+    writed,
+    pasted,
+    cast(focus_time / 60 as decimal(15, 3)) as focus_time,
+    cast(writed_time / 60 as decimal(15, 3)) as writed_time,
+    SQRT(procastination) as procastination,
+    SQRT(jadud) as jadud,
+    tested,
+    submited,
+    wrong_submit,
+    syntax_error,
+    syntax_grade,
+    grade
+`;
+
+const questionAvgColumns = 
+`
+    assessment_id,
+    AVG(amount_of_change) as amount_of_change,
+    AVG(blank_line) as blank_line,
+    AVG(comments) as comments,
+    AVG(lloc) as lloc,
+    AVG(count_if) as count_if,
+    AVG(count_loop) as count_loop,
+    AVG(count_var) as count_var,
+    AVG(count_delete) as deleted,
+    AVG(writed) as writed,
+    AVG(pasted) as pasted,
+    AVG(cast(focus_time / 60 as decimal(15, 3))) as focus_time,
+    AVG(cast(writed_time / 60 as decimal(15, 3))) as writed_time,
+    AVG(cast(early_often / 60 as decimal(15, 3))) as early_often, 
+    AVG(jadud) as jadud,
+    AVG(tested) as tested,
+    AVG(submited) as submited,
+    AVG(wrong_submit) as wrong_submit,
+    AVG(syntax_error) as syntax_error,
+    AVG(syntax_grade) as syntax_grade,
+    AVG(grade) as grade
+`;
+
+const predictionsColumns = `
+    logins,
+    comments,
+    blank_line,
+    lloc,
+    count_if,
+    count_loop,
+    count_var,
+    syntax_grade,
+    log_rows,
+    deleted_coef,
+    writed_coef,
+    pasted_coef,
+    focus_time,
+    writed_time,
+    early_often,
+    error_coef,
+    submit_coef,
+    jadud,
+    amount_of_change,
+    procastination,
+    correct,
+    incorrect,
+    blank,
+    homework_grade,
+    exam_grade,
+    passed_probability,
+    grade_regression
+`;
+
+module.exports = { questionColumns, questionAvgColumns, predictionsColumns }
