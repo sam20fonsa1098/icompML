@@ -8,7 +8,7 @@ Steps to run:
 
 docker run --name mySQL -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=icompML -d mysql:latest
 
-3 - Instal node -> https://nodejs.org/en/download/
+3 - Install node -> https://nodejs.org/en/download/
 
 3.5 - Optional, install yarn -> https://classic.yarnpkg.com/en/docs/install/ (do not install version > 2.0)
 
