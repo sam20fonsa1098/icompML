@@ -20,6 +20,6 @@ If you get this error when run 'pip install -r requirements.txt'
 
 message error: error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
 
-Chech this link: https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit
+Check this link: https://stackoverflow.com/questions/26053982/setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-with-exit
 
 6 - To run react app, inside frontend, run -> (npm or yarn) install, after this, run -> (npm or yarn) start
