@@ -12,6 +12,6 @@ Steps to run:
 
 4 - Inside backend folder, run -> npm install; after, run -> npm dev; With this, all tables was created in mysql;
 
-5 - Inside pythonScript, run -> python main.py;
+5 - Inside pythonScript, run -> pip install -r requirements.txt;  after run -> python main.py;
 
 6 - To run react app, inside frontend, run -> (npm or yarn) install, after this, run -> (npm or yarn) start
