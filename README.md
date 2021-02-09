@@ -8,6 +8,8 @@ Steps to run:
 
 3 - Instal node -> https://nodejs.org/en/download/
 
+3.5 - Optional, install yarn -> https://classic.yarnpkg.com/en/docs/install/ (do not install version > 2.0)
+
 4 - Inside backend folder, run -> npm install; after, run -> npm dev; With this, all tables was created in mysql;
 
 5 - Inside pythonScript, run -> python main.py;
