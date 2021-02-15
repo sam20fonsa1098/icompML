@@ -8,12 +8,26 @@ Steps to run:
 
 docker run --name mySQL -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=icompML -d mysql:latest
 
+2.5 - It is necessary to change root password in mysql server, to do this, run this command:
+
+docker exec -it mySQL bash
+
+2.6 Then run:
+
+mysql -u root -p
+
+2.7 - Now just put the password 'root'.
+
+2.8: Run this two commands inside mySql console.
+
+*- ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'root'
+*- flush privileges;
+
 3 - Install node -> https://nodejs.org/en/download/
 
 3.5 - Optional, install yarn -> https://classic.yarnpkg.com/en/docs/install/ (do not install version > 2.0)
 
-4 - Inside backend folder, run -> 'npm install'; after, run -> 'npm dev'; With this, all tables was created in mysql;
-
+4 - Inside backend folder, run -> 'npm install'; after, run -> 'npm run dev'; With this, all tables was created in mysql;
 
 5 - Inside pythonScript, run -> 'pip install -r requirements.txt';  after run -> 'python main.py';
 
