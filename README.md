@@ -20,8 +20,10 @@ mysql -u root -p
 
 2.8: Run this two commands inside mySql console.
 
-*- ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'root'
-*- flush privileges;
+ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'root'
+
+
+flush privileges;
 
 3 - Install node -> https://nodejs.org/en/download/
 
